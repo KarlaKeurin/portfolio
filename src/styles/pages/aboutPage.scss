@@ -1,0 +1,100 @@
+@import "../variables.scss";
+
+@media (min-width: 1200px) {
+  .about-page {
+    border-radius: 0px 0px 160px 160px;
+    background: #FF73B2;
+    margin-bottom: 40px;
+
+    .phrase-about {
+      color: #F9F1DA;
+
+      font-family: Poppins;
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 48px;
+      letter-spacing: 1.2px;
+
+      z-index: 1;
+      margin-top: 70px;
+      width: 90%;
+      flex-shrink: 0;
+      padding: 15px 15px 15px 190px;
+
+      border-radius: 0px 41px 41px 0px;
+      border: 4px solid #171717;
+      background: #1733D2;
+      box-shadow: 12px 12px 0px 0px #171717, 0px 12px 0px 0px #171717;
+    }
+  
+    .about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .about-me-img {
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 15px 190px 15px 190px;
+        gap: 50px;
+
+        .text-about {
+          color: #F9F1DA;
+          // width: 70%;
+
+          text-align: justify;
+          font-family: "Source Sans 3";
+          font-size: 27px;
+          font-style: normal;
+          font-weight: 700;
+        }        
+
+        img {
+          width: 350px;
+        }
+      }
+
+      .my-skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 190px 80px 190px;
+        
+        h2 {
+          color: #F9F1DA;
+
+          text-shadow: 5px 5px 0px #171717;
+          font-family: "Bowlby One SC";
+          font-size: 55px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 90px;
+          letter-spacing: 2px;
+        }
+
+        .icons {
+          display: flex;
+          // justify-content: space-between;
+          align-items: center;
+          padding-top: 30px;
+          gap: 20px;
+          flex-wrap: wrap;
+
+          img {
+            width: 75px;
+            border-radius: 50%;
+            filter: drop-shadow(3.018px 4.025px 0px $dark-grey);
+          }
+        }
+      }
+      
+
+      
+    }
+
+  }
+}

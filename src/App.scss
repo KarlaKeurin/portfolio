@@ -3,71 +3,22 @@
 #root {
   margin: 0 auto;
   padding: 0;
+  background-color: #F9F1DA;
 }
 
-main {
-  min-height: 100vh;
-  width: 100vw;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-
-  .header-container{
+@media (min-width: 1200px) {
+  main {
+    // min-height: 100vh;
+    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 100px;
-    padding: 20px 140px;
+    flex-direction: column;
 
-    .logo-text {
-      color: $off-white;
-  
-      text-shadow: 5px 5px 0px $dark-grey;
-      font-family: "Bowlby One SC";
-      font-size: 30px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 69.99px;
-      letter-spacing: 0.3px;
-      text-transform: capitalize;
-
-      cursor: pointer;
+    .home-page,
+    .about-page,
+    .projects-page,
+    .contact-page {
+      scroll-margin-top: 80px;
     }
-
-    .menu-options {
-      display: flex;
-      padding: 8px 18px;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 50px;
-
-      border-radius: 40px;
-      border: 2px solid $dark-grey;
-      background: $off-white;
-      box-shadow: 5px 5px 0px 0px $dark-grey;
-
-      a {
-        color: $dark-grey;
-
-        font-family: Poppins;
-        font-size: 17px;
-        font-style: normal;
-        font-weight: 700;
-        letter-spacing: 0.2px;
-
-        cursor: pointer;
-        &:hover {
-          color: $royal-blue;
-          transition: all 500ms;
-        }
-      }
-    }
-  }
-
 }
 
 @keyframes appear {
@@ -78,3 +29,4 @@ main {
     opacity: 1;
   }
 };
+}

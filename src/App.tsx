@@ -1,18 +1,18 @@
-// import headerLogo from './assets/logo-img.svg';
 import './App.scss';
+import Header from './pages/Header';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ProjectsPage from './pages/ProjectsPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
-  // const [count, setCount] = useState(0);
   return (
     <main>
-      <header className="header-container">
-        <span className="logo-text">Karla Keurin</span>
-        <nav className="menu-options">
-          <a>Sobre mim</a>
-          <a>Projetos</a>
-          <a>Contato</a>
-        </nav>
-      </header>
+      <Header />
+      <HomePage />
+      <AboutPage />
+      <ProjectsPage />
+      <ContactPage />
     </main>
   );
 }

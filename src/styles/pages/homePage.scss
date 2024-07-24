@@ -1,0 +1,75 @@
+@import "../variables.scss";
+
+@media (min-width: 1200px) {
+  .home-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 190px 130px 130px 130px;
+    background-color: #FF73B2;
+
+    .background-title {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      flex-direction: column;
+
+      .title-home-page {
+        width: 870px;
+        color: $royal-blue;
+
+        text-align: center;
+        font-family: "Bowlby One SC";
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100px;
+        letter-spacing: 3px;
+
+        border-radius: 90px;
+        border: 4px solid $dark-grey;
+        background: $neon-green;
+        box-shadow: 18px 18px 0px 0px $dark-grey;
+        display: inline-flex;
+        padding: 42px 60px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      img {
+        position: absolute;
+        top: 145px;
+        width: 135px;
+        height: 135px;
+      }
+    }
+
+    .social-media {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 130px;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        width: 60px;
+        background-color: $royal-blue;
+        border-radius: 50%;
+        filter: drop-shadow(3.018px 4.025px 0px $dark-grey);
+        margin: 0 20px;          
+        
+        .social-icon {
+          position: center;
+          height: 35px;
+          width: 35px;
+        }
+      }
+    }
+  }
+}
