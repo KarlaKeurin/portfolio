@@ -1,0 +1,32 @@
+@import "../variables.scss";
+
+@media (min-width: 1350px) {
+  .projects-page {
+    background-color: $neon-green;
+
+    .title {
+      padding: 20px 190px 10px 190px;
+      color: $royal-blue;
+
+      font-family: "Bowlby One SC";
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 90px;
+      letter-spacing: 2px;
+    }
+
+    .projects-list {
+      background-color: $off-white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 25px;
+      margin: 30px 190px 10px 190px;
+      border-radius: 70px;
+
+      
+    }
+  }
+}

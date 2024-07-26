@@ -1,6 +1,6 @@
 import '../styles/pages/header.scss';
 
-function Header() {
+export function Header() {
   return (
     <header className="header-container">
       <a href="#home-page" className="logo-text">Karla Keurin</a>
@@ -12,5 +12,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;

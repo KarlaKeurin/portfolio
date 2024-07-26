@@ -1,6 +1,6 @@
 @import "../variables.scss";
 
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
   .home-page {
     display: flex;
     align-items: center;
@@ -61,7 +61,7 @@
         width: 60px;
         background-color: $royal-blue;
         border-radius: 50%;
-        filter: drop-shadow(3.018px 4.025px 0px $dark-grey);
+        filter: drop-shadow(4px 4px 0px $dark-grey);
         margin: 0 20px;          
         
         .social-icon {

@@ -3,10 +3,10 @@ import {
   githubIcon,
   linkedinIcon,
   shineIcon,
-} from '../assets';
+} from '../../public';
 import '../styles/pages/homePage.scss';
 
-function HomePage() {
+export function HomePage() {
   return (
     <section id="home-page" className="home-page">
       <div className="background-title">
@@ -27,5 +27,3 @@ function HomePage() {
     </section>
   );
 }
-
-export default HomePage;

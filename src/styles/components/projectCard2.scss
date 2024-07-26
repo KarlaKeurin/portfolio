@@ -1,0 +1,61 @@
+@import "../variables.scss";
+
+@media (min-width: 1350px) {
+  
+
+  .project-2 {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    padding: 30px 40px 30px 40px;
+    
+    .shine-left {
+      position: absolute;
+      bottom: 970px;
+      width: 150px;
+      left: 140px;
+    }
+
+    .project-image {
+      background-color: $violet;
+      // padding: 50px 50px 50px 50px;
+      width: 500px;
+      border-radius: 50px;
+      border: 4px solid $dark-grey;
+      box-shadow: 10px 10px 0px 0px $dark-grey;
+    }
+
+    .description {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+
+      h3 {
+        color: $royal-blue;
+
+        font-family: Poppins;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 900;
+        letter-spacing: 1.44px;
+      }
+
+      .text {
+        color: $dark-grey;
+
+        text-align: justify;
+        font-family: "Source Sans 3";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0.72px;
+      }
+    }
+  }
+}

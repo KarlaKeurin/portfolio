@@ -1,10 +1,10 @@
 @import "../variables.scss";
 
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
   .about-page {
     border-radius: 0px 0px 160px 160px;
     background: #FF73B2;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 
     .phrase-about {
       color: #F9F1DA;
@@ -54,7 +54,7 @@
         }        
 
         img {
-          width: 350px;
+          width: 400px;
         }
       }
 
@@ -87,14 +87,10 @@
           img {
             width: 75px;
             border-radius: 50%;
-            filter: drop-shadow(3.018px 4.025px 0px $dark-grey);
+            filter: drop-shadow(4px 4px 0px $dark-grey);
           }
         }
-      }
-      
-
-      
+      }      
     }
-
   }
 }

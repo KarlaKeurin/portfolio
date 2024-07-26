@@ -13,10 +13,10 @@ import {
   html,
   css,
   photoAbout,
-} from '../assets';
+} from '../../public';
 import '../styles/pages/aboutPage.scss';
 
-function AboutPage() {
+export function AboutPage() {
   return (
     <section id="about-page" className="about-page">
       <h2 className="phrase-about">
@@ -37,22 +37,20 @@ function AboutPage() {
           <h2>Minhas skills</h2>
           <div className="icons">
             <img src={ javascript } alt="JavaScript icon" />
-            <img src={ typescript } alt="TypeScript icon" />
             <img src={ react } alt="" />
+            <img src={ typescript } alt="TypeScript icon" />
             <img src={ python } alt="Python icon" />
             <img src={ csharp } alt="C# icon" />
             <img src={ figma } alt="Figma icon" />
+            <img src={ css } alt="CSS icon" />
             <img src={ nodejs } alt="NodeJs icon" />
             <img src={ sequelize } alt="Sequelize icon" />
             <img src={ docker } alt="Docker icon" />
             <img src={ mysql } alt="MySQL icon" />
             <img src={ html } alt="HTML icon" />
-            <img src={ css } alt="CSS icon" />
           </div>
         </div>
       </div>
     </section>
   );
 }
-
-export default AboutPage;
