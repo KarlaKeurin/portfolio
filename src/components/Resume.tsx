@@ -7,16 +7,18 @@ export function Resume() {
   const { i18n } = useTranslation();
   const resumeRef = useRef<HTMLAnchorElement | null>(null);
 
+  const base = import.meta.env.BASE_URL;
+
   const getResumeFile = () => {
     switch (i18n.language) {
       case 'pt':
-        return '/resume/curriculo_pt.pdf';
+        return `${base}resume/curriculo_pt.pdf`;
       case 'en':
-        return '/resume/resume_en.pdf';
+        return `${base}resume/resume_en.pdf`;
       case 'es':
-        return '/resume/curriculo_es.pdf';
+        return `${base}resume/curriculo_es.pdf`;
       default:
-        return '/resume/curriculo_pt.pdf';
+        return `${base}resume/curriculo_pt.pdf`;
     }
   };
   
