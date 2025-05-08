@@ -1,0 +1,11 @@
+@use "./styles/variables.scss" as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  background-color: $grey;
+}
+
+

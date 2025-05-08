@@ -1,0 +1,41 @@
+@use "../variables.scss" as *;
+
+.about {
+  background-color: $white;
+  color: $black;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.text {
+  color: $black;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin: 0;
+  text-align: left;
+}
+
+@media (max-width: 1048px) {
+  .about {
+    padding: 150px 10px 10px 10px;
+    align-items: flex-start;
+    .text {
+      text-align: left;
+      font-size: 13px;
+      max-width: 745px;
+    }
+  }
+}
+
+@media (min-width: 1049px) {
+  .about {
+    padding: 15px 8vw 15px 15px;
+    .text {
+      font-size: 15px;
+    }
+  }
+}

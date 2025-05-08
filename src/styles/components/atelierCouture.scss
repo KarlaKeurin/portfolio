@@ -1,0 +1,118 @@
+@use "../variables.scss" as *;
+
+.atelier-couture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+  gap: 20px;
+  img {
+    width: 100%;
+    border-radius: 10px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    h3 {
+      color: $dark-grey;
+      font-size: 20px;
+      font-family: Poppins;
+      font-weight: 700;
+      line-height: normal;
+    }
+    p {
+      color: $dark-grey;
+      font-size: 14px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 300;
+      text-align: center;
+    }
+  }
+
+  .skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 300px;
+    p {
+      font-family: Poppins;
+      color: $dark-grey;
+      border: 1.5px solid $dark-grey;
+      font-size: 14px;
+      border-radius: 5px;
+    }
+  }
+
+  .github-button p {
+    font-size: 14px;
+    font-family: Poppins;
+    color: $white;
+    background-color: $dark-grey;
+    padding: 5px 15px;
+    border-radius: 5px;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.20));
+    transition: transform 0.5s ease;
+  }
+
+  .github-button:hover p {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 700px) {
+  .atelier-couture {
+    padding: 10px 10px 30px 10px;
+    img {
+      max-width: 450px;
+    }
+    .skills-container {
+      gap: 8px;
+      p {
+        padding: 3px 12px;
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1048px) {
+  .atelier-couture {
+    padding: 10px 10px 30px 10px;
+    img {
+      max-width: 500px;
+    }
+    .description p {
+      padding: 0 10vw;
+    }
+    .skills-container {
+      gap: 8px;
+      p {
+        padding: 3px 12px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1048px) {
+  .atelier-couture {
+    padding: 10px;
+    img {
+      max-width: 450px;
+    }
+    .description p {
+      padding: 0 10px;
+    }
+    .skills-container {
+      gap: 10px 12px;
+      p {
+        padding: 4px 15px;
+      }
+    }
+  }
+}

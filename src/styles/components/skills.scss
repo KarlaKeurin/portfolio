@@ -1,0 +1,72 @@
+@use "../variables.scss" as *;
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+  .subtitle {
+    color: $black;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .icon {
+      object-fit: contain;
+      flex: 0 0 auto;
+    }
+  }
+}
+
+@media (max-width: 1048px) {
+  .skills {
+    gap: 8px;
+    padding: 10px 10px 20px 10px;
+    .subtitle {
+      font-size: 20px;
+      color: $dark-grey;
+      text-align: center;
+      line-height: 22px;
+    }
+    
+    .skills-list {
+      max-width: 400px;
+      gap: 10px;
+      .icon {
+        width: 17%;
+        max-width: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1048px) {
+  .skills {
+    gap: 15px;
+    padding: 15px;
+    .subtitle {
+      font-size: 26px;
+      text-align: center;
+      line-height: 28px;
+    }
+    
+    .skills-list {
+      gap: 15px;
+      .icon {
+        width: 35px;
+        transition: transform 0.5s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

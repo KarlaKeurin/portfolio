@@ -1,0 +1,34 @@
+{
+  "intro": {
+    "title": "Desarrolladora full stack con <italic>pasión</italic> por la tecnología y la creatividad"
+  },
+  "about": {
+    "description": "¡Hola! Me llamo Karla Keurin y soy una desarrolladora full stack con enfoque en front-end. Me apasiona transformar ideas en soluciones accesibles, funcionales y atractivas. Mi interés por la tecnología comenzó en 2022 y, desde entonces, me he sumergido por completo en este universo, siempre en busca de nuevos desafíos y oportunidades para crecer como profesional. Además de programar, disfruto conocer nuevos lugares, experimentar con recetas diferentes y maratonear películas y series."
+  },
+  "projects": {
+    "subtitle": "Proyectos"
+  },
+  "skills": {
+    "subtitle": "Tecnologías"
+  },
+  "resume": {
+    "subtitle": "Currículum"
+  },
+
+  
+  "home-link": {
+    "subtitle": "Inicio"
+  },
+  "futebol-clube": {
+    "description": "Sitio informativo sobre partidos y clasificaciones de fútbol. Se desarrolló una API utilizando el método TDD, y las aplicaciones fueron integradas mediante Docker Compose para que funcionen con una base de datos integrada."
+  },
+  "atelier-couture": {
+    "description": "Sitio web de moda creado para un atelier de costura, desarrollado con TypeScript, Sass, React y Django. El sitio es adaptable a dispositivos móviles e incluye una página de inicio de sesión con roles y un panel de control para el monitoreo de pedidos y datos de los clientes."
+  },
+  "data-scraper": {
+    "description": "Este proyecto realiza la extracción de datos del sitio web de la ANS, descarga archivos en PDF, extrae información relevante a archivos CSV, guarda todo en una base de datos y lo muestra en una interfaz sencilla y funcional. También incluye un campo de búsqueda para facilitar la navegación por los datos."
+  },
+  "github-button": {
+    "name": "Abrir repositorio"
+  }
+}

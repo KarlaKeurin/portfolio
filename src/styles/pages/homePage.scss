@@ -1,0 +1,129 @@
+.home {
+  display: grid; 
+  width: 100%;
+  box-sizing: border-box;
+  
+  > * {
+    overflow: hidden;
+    will-change: transform, opacity;
+    position: relative;
+  }
+
+  .title, h1, h2, h3, p {
+    margin: 0;
+  }
+
+  .intro,
+  .about,
+  .photo-container,
+  .projects,
+  .language-selector,
+  .skills,
+  .resume-container,
+  .social-media {
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 1048px) {
+  .home {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 8px;
+    padding: 8px;
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+    
+    .intro,
+    .about {
+      grid-column: 1 / span 6;
+    }
+
+    .projects {
+      grid-column: 4 / span 3;
+    }
+  
+    .photo-container {
+      grid-column: 1 / span 3;
+      .photo {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .skills {
+      grid-column: 4 / span 3;
+      grid-row: 4 / span 10;
+      min-height: 200px;
+    }
+  
+    .resume-container {
+      grid-column: 1 / span 3;
+      grid-row: 4 / span 9;
+    }
+
+    .language-selector {
+      grid-column: 1 / span 3;
+      grid-row: 13;
+    }
+  
+    .social-media {
+      grid-column: span 6;
+    }
+  }
+}
+
+@media (min-width: 1048px) {
+  .home {
+    height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 10px;
+    padding: 10px;
+    
+    .intro,
+    .about {
+      grid-column: 1 / span 6;
+      grid-row: span 6;
+    }
+  
+    .photo-container {
+      grid-column: 7 / span 3;
+      grid-row: 1 / span 6;
+      .photo {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  
+    .projects {
+      grid-column: 7 / span 3;
+      grid-row: span 5;
+    }
+
+    .language-selector {
+      overflow: visible;
+      z-index: 999;
+      grid-column: 7 / span 2;
+      grid-row: 12 / span 1;
+    }
+  
+    .skills {
+      grid-column: 10 / span 3;
+      grid-row: 1 / span 6;
+    }
+  
+    .resume-container {
+      grid-column: 10 / span 3;
+      grid-row: 7 / span 5;
+    }
+  
+    .social-media {
+      grid-column: 9 / span 4;
+      grid-row: 12;
+    }
+  }
+}
