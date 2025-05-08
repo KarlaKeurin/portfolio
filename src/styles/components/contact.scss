@@ -1,11 +1,11 @@
 @use "../variables.scss" as *;
 
-.social-media {
+.social-list {
   display: flex;
   flex-direction: row;
   align-items: center;
   background-color: $white;
-  .social-icons {
+  .social-media {
     color: $dark-grey;
     font-family: Poppins;
     font-style: normal;
@@ -14,24 +14,24 @@
 }
 
 @media (max-width: 1048px) {
-  .social-media {
+  .social-list {
     justify-content: space-around;
     padding: 10px;
-    .social-icons {
+    .social-media {
       font-size: 12px;
     }
   }
 }
 
 @media (min-width: 1048px) {
-  .social-media {
+  .social-list {
     justify-content: space-around;
     padding: 10px;
-    .social-icons p {
+    .social-media p {
       transition: transform 0.5s ease;
       font-size: 13px;
     }
-    .social-icons:hover p {
+    .social-media:hover p {
       transform: scale(1.1);
     }
   }
