@@ -55,10 +55,10 @@ export function HomePage() {
         <img src={ photo } alt="Karla Keurin" className="photo" />
       </div>
       <Projects />
-      <LanguageSelector />
       <Skills />
       <Resume />
       <Contact />
+      <LanguageSelector />
     </div>
   );
 }
