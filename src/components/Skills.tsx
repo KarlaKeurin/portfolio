@@ -1,59 +1,50 @@
 import { useTranslation } from 'react-i18next';
 import { Trans } from 'react-i18next';
 
-import {
-  angular,
-  csharp,
-  css,
-  cypress,
-  docker,
-  figma,
-  git,
-  github,
-  html,
-  javascript,
-  jest,
-  mysql,
-  next,
-  node,
-  postgresql,
-  postman,
-  python,
-  react,
-  redux,
-  sass,
-  slack,
-  typescript,
-  vscode,
-  vue,
-} from '../assets';
+// import {
+//   angular,
+//   csharp,
+//   css,
+//   cypress,
+//   docker,
+//   figma,
+//   git,
+//   github,
+//   html,
+//   javascript,
+//   jest,
+//   mysql,
+//   next,
+//   node,
+//   postgresql,
+//   postman,
+//   python,
+//   react,
+//   redux,
+//   sass,
+//   slack,
+//   typescript,
+//   vscode,
+//   vue,
+// } from '../assets';
 import '../styles/components/skills.scss';
 
 const skills = [
-  { src: html, alt: "HTML" },
-  { src: css, alt: "CSS" },
-  { src: javascript, alt: "JavaScript" },
-  { src: typescript, alt: "TypeScript" },
-  { src: react, alt: "React.js" },
-  { src: vue, alt: "Vue.js" },
-  { src: angular, alt: "Angular" },
-  { src: sass, alt: "Sass" },
-  { src: redux, alt: "Redux" },
-  { src: next, alt: "Next.js" },
-  { src: cypress, alt: "Cypress" },
-  { src: jest, alt: "Jest" },
-  { src: csharp, alt: "C#" },
-  { src: python, alt: "Python" },
-  { src: node, alt: "Node.js" },
-  { src: docker, alt: "Docker" },
-  { src: mysql, alt: "MySQL" },
-  { src: postgresql, alt: "PostgreSQL" },
-  { src: postman, alt: "Postman" },
-  { src: github, alt: "GitHub" },
-  { src: git, alt: "Git" },
-  { src: vscode, alt: "VSCode" },
-  { src: figma, alt: "Figma" },
-  { src: slack, alt: "Slack" },
+  'TypeScript',
+  'JavaScript',
+  'React',
+  'Next',
+  'CSS',
+  'Sass',
+  'Jest',
+  'Python',
+  'C#',
+  'Node',
+  'MySQL',
+  'Docker',
+  'Postman',
+  'Figma',
+  'GitHub',
 ];
 
 export function Skills() {
@@ -66,11 +57,13 @@ export function Skills() {
           ns="translation"
         />
       </h2>
-      <div className="skills-list">
-        {skills.map(({ src, alt }) => (
-          <img key={alt} src={src} alt={alt} title={alt} className="icon" />
+      <ul className="skills-list">
+        {skills.map((skill) => (
+          <li key={skill} className="icon">
+            {skill}
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 }
