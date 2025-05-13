@@ -16,18 +16,27 @@
   
   .skills-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
     .icon {
-      object-fit: contain;
-      flex: 0 0 auto;
+      font-family: Poppins;
+      color: $dark-grey;
+      border: 1.5px solid $dark-grey;
+      font-size: 14px;
+      border-radius: 5px;
+      list-style-type: none;
     }
   }
 }
 
 @media (max-width: 1048px) {
   .skills {
-    gap: 8px;
+    gap: 15px;
     padding: 10px 10px 20px 10px;
     .subtitle {
       font-size: 20px;
@@ -38,10 +47,10 @@
     
     .skills-list {
       max-width: 400px;
-      gap: 10px;
+      gap: 8px;
       .icon {
-        width: 17%;
-        max-width: 30px;
+        font-size: 13px;
+        padding: 3px 10px;
       }
     }
   }
@@ -58,9 +67,9 @@
     }
     
     .skills-list {
-      gap: 15px;
+      gap: 10px 12px;
       .icon {
-        width: 35px;
+        padding: 4px 13px;
         transition: transform 0.5s ease;
 
         &:hover {
