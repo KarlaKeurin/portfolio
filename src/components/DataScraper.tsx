@@ -8,7 +8,7 @@ export function DataScraper() {
   useTranslation();
   return (
     <div className="data-scraper card">
-      <img className="image" src={ dataScraper } alt="Data Scraper" />
+      <img className="image" src={ dataScraper } alt="Data Scraper" loading='lazy' />
       <div className="description">
         <h3>Data Scraper</h3>
         <p className="text">

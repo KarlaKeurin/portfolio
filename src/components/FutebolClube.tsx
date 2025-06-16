@@ -8,7 +8,7 @@ export function FutebolClube() {
   useTranslation();
   return (
     <div className="futebol-clube card">
-      <img className="image" src={ tfc } alt="Atelier Couture" />
+      <img className="image" src={ tfc } alt="Atelier Couture" loading='lazy' />
       <div className="description">
         <h3>Futebol Club</h3>
         <p className="text">

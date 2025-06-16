@@ -8,7 +8,7 @@ export function AtelierCouture() {
   useTranslation();
   return (
     <div className="atelier-couture card">
-      <img className="image" src={ atelierCouture } alt="Atelier Couture" />
+      <img className="image" src={ atelierCouture } alt="Atelier Couture" loading='lazy' />
       <div className="description">
         <h3>Atelier Couture</h3>
         <p className="text">
